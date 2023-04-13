@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     private inner class SoundAdapter(private val sounds: List<Sound>) : RecyclerView.Adapter<SoundHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SoundHolder {
             val binding: ListItemSoundBinding = DataBindingUtil.inflate(layoutInflater, R.layout.list_item_sound,parent, false)
+
             return SoundHolder(binding)
         }
 
